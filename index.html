@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L5 SOD - Timetable 2024-2025</title>
+    <style>
+        body {
+            background-color: #f5f0e1; /* Light beige background */
+            color: #4a3f35; /* Dark brown text */
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        th, td {
+            border: 1px solid #4a3f35; /* Dark brown border */
+            padding: 23px;
+            text-align: center;
+            font-size: 20px;
+            word-wrap: break-word;
+        }
+        th {
+            background-color: #d4c0a1; /* Light brown header */
+            color: #4a3f35; /* Dark brown text in header */
+        }
+        
+        /* Class color themes with shades of brown and earth tones */
+        .red { background-color: #a97155; color: #fff; }    /* NTAGA - Reddish-brown */
+        .green { background-color: #312f2f; color: #fff; }  /* VITAL - Soft earth tone */
+        .yellow { background-color: #2d1f11; color: #fff; } /* XX - Sandy brown */
+        .blue { background-color: #9c7760; color: #fff; }   /* NGASA - Light coffee */
+        .purple { background-color: #cfaf9d; color: #fff; } /* ALEX - Chocolate brown */
+        .pink { background-color: #b58863; color: #fff; }   /* PAUL - Muted peach */
+        .lightgreen { background-color: #725f4d; color: #fff; } /* JANV - Warm beige */
+        .orange { background-color: #7f5539; color: #fff; } /* MATHIAS - Terracotta */
+        .lightblue { background-color: #c4a484; color: #fff; }  /* SAID - Pale brown */
+        .darkgreen { background-color: #584233; color: #fff; }  /* PAUL - Dark walnut */
+        .free{background-color: #d4c0a1; color: #fff;}
+        
+        /* Vertical text styling */
+        .vertical-text {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            font-weight: bold;
+            color: #4a3f35;
+            background-color: #d4c0a1;
+            
+        }
+        
+        @media (max-width: 768px) {
+            th, td {
+                padding: 10px;
+                font-size: 16px;
+            }
+        }
+
+        /* Styling for the "Done by Romain" text */
+        .done-by-romain {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 24px;
+            color: #4a3f35; /* Dark brown text */
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .Break {
+            border-bottom:none;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align: center; color: #4a3f35;">L5 SOD - Timetable 2024-2025</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Days</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th class="Break"></th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th class="Lunch"></th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Monday -->
+        <tr>
+            <td>Mon</td>
+            <td class="yellow">PHY</td>
+            <td class="yellow">PHY</td>
+            <td class="darkgreen">PAUL</td>
+            <td class="darkgreen">PAUL</td>
+            <td class="vertical-text" rowspan="5">Break</td> <!-- "Break" cell spanning all rows -->
+            <td class="blue">NGASA</td>
+            <td class="blue">NGASA</td>
+            <td class="blue">NGASA</td>
+            <td class="vertical-text" rowspan="5">Lunch</td> <!-- "Lunch" cell spanning all rows -->
+            <td class="green">VITAL</td>
+            <td class="free">XX</td>
+            <td class="free">XX</td>        
+        </tr>
+        <tr>
+            <td>Tues</td>
+            <td class="green">VITAL</td>
+            <td class="green">VITAL</td>
+            <td class="lightgreen">JANV</td>
+            <td class="lightgreen">JANV</td>
+            <td class="red">NTAGA</td>
+            <td class="red">NTAGA</td>
+            <td class="blue">NGASA</td>
+            <td class="blue">NGASA</td>
+            <td class="red">NTAGA</td>
+            <td class="red">NTAGA</td>
+        </tr>
+        <tr>
+            <td>Wed</td>
+            <td class="blue">NGASA</td>
+            <td class="blue">NGASA</td>
+            <td class="lightgreen">JANV</td>
+            <td class="lightgreen">JANV</td>
+            <td class="red">NTAGA</td>
+            <td class="red">NTAGA</td>
+            <td class="red">NTAGA</td>
+            <td class="free">XX</td>
+            <td class="free">XX</td>
+            <td class="free">XX</td>
+        </tr>
+        <tr>
+            <td>Thur</td>
+            <td class="lightgreen">JANV</td>
+            <td class="lightgreen">JANV</td>
+            <td class="blue">NGASA</td>
+            <td class="orange">KINY</td>
+            <td class="orange">KINY</td>
+            <td class="purple">SAID</td>
+            <td class="purple">SAID</td>
+            <td class="blue">NGASA</td>
+            <td class="blue">NGASA</td>
+            <td class="blue">NGASA</td>
+        </tr>
+        <tr>
+            <td>Fri</td>
+            <td class="darkgreen">PAUL</td>
+            <td class="darkgreen">PAUL</td>
+            <td class="lightgreen">JANV</td>
+            <td class="yellow">PHY</td>
+            <td class="yellow">PHY</td>
+            <td class="red">NTAGA</td>
+            <td class="red">NTAGA</td>
+            <td class="free">XX</td>
+            <td class="free">XX</td>
+            <td class="free">XX</td>
+        </tr>
+    </tbody>
+</table>
+
+<p class="done-by-romain">Done by Romain</p>
+<p class="done-by-romain">Colors by Kampire</p>
+
+<script type="text/javascript">
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && (e.key === 'u' || e.key === 's' || e.key === 'p')) {
+            e.preventDefault();
+        }
+    });
+ </script>
+ 
+</body>
+</html>
